@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Elasticsearch::Simple::VERSION
   spec.authors       = ["Jiří Zajpt"]
   spec.email         = ["jzajpt@blueberry.cz"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Simple extension of elasticsearch gem to allow easy indexing and searching}
+  spec.summary       = %q{Simple extension of elasticsearch gem to allow easy indexing and searching}
   spec.homepage      = ""
   spec.license       = "MIT"
 
