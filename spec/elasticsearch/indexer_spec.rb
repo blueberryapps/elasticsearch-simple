@@ -19,7 +19,7 @@ describe Elasticsearch::Indexer do
     end
   end
 
-  describe '#index' do
+  describe '#create' do
     it 'calls to es_client#index' do
       es_client = double index: true
       indexer = make_indexer_instance
@@ -27,7 +27,7 @@ describe Elasticsearch::Indexer do
 
       expected_hash = { index: nil, type: 'test', id: 321, body: nil }
       expect(es_client).to receive(:index).with(expected_hash)
-      indexer.index
+      indexer.create
     end
   end
 

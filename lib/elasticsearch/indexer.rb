@@ -12,7 +12,7 @@ module Elasticsearch
                        id: id
     end
 
-    def index
+    def create
       es_client.index index: index_name,
                       type:  type_name,
                       id: id,
