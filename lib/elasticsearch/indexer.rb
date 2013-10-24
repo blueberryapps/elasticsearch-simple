@@ -6,11 +6,17 @@ module Elasticsearch
 
     attr_writer :es_client
 
+    def delete
+      es_client.delete index: index_name,
+                       type:  type_name,
+                       id: id
+    end
+
     def index
       es_client.index index: index_name,
-        type:  type_name,
-        id: id,
-        body: index_body
+                      type:  type_name,
+                      id: id,
+                      body: index_body
     end
 
     def index_body
